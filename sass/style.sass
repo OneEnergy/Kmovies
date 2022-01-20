@@ -1,0 +1,93 @@
+@use  "variables"
+@use  "mixins"
+
+body
+    background-color: variables.$bgColor
+    margin: 0 auto
+    list-style: none
+    box-sizing: border-box
+    font-family: sans-serif
+    color: variables.$textColor
+    a
+        text-decoration: none
+        color: variables.$primaryColor
+    .app
+        display: flex
+        width: 100%
+        justify-content: center
+        flex-direction: column
+        margin: 0 aut
+    .nenhumSelecionado
+        @include mixins.flex-center
+        text-align: center
+        margin: 40px 0
+    .header
+        @include mixins.container
+        display: flex
+        align-items: center
+        justify-content: space-around
+        height: 70px
+        margin: 0.3rem
+
+        &-logo
+            text-decoration: none
+            font-family: 'Bebas Neue', cursive
+            font-size: 3rem
+            color: variables.$primaryColor
+            user-select: none
+        &-btnFavoritos
+            box-sizing: border-box
+            text-decoration: none
+            font-family: 'Bebas Neue', cursive
+            font-size: 2rem
+            color: variables.$primaryColor
+            border-radius: 20px
+            padding: 2px
+            transition: all 100ms
+            border: 2px solid black
+            user-select: none
+            &:hover
+                border: 2px solid variables.$secundaryColor
+                color: variables.$secundaryColor
+                user-select: none
+    .Home
+        @include mixins.flex-center
+        flex-direction: column
+    .Post
+        width: 80%
+        box-sizing: border-box
+        display: flex
+        justify-content: center
+        flex-direction: column
+        border: inset variables.$borderColor 3px
+        border-radius: 38px
+        margin: 40px auto
+        box-shadow: variables.$borderColor 40px 20px 120px
+        font-size: 0.9rem
+        &-img
+            border-top-right-radius: 40px
+            border-top-left-radius: 40px
+            width: 100%
+        &-texto
+            padding: 0 0.8rem
+            margin: 0.2rem
+            h1
+                text-align: center
+
+        &-btn
+            appearance: none
+            @include mixins.flex-center
+            height: 60px
+            margin: 20px auto
+            text-align: center
+            width: 40%
+            box-shadow: 0px 5px 10px variables.$borderColor
+            box-sizing: border-box
+            border: inset 1px white
+            cursor: pointer
+            border-radius: 40px
+            text-transform: uppercase
+        &-btnArea
+            display: flex
+            justify-content: space-between
+// Post Favoritos Array Vazio

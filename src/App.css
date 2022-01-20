@@ -1,0 +1,112 @@
+body {
+  background-color: #000000;
+  margin: 0 auto;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #FFFEFD;
+}
+body a {
+  text-decoration: none;
+  color: #FD76CB;
+}
+body .app {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 aut;
+}
+body .nenhumSelecionado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+}
+body .header {
+  max-width: 100vw;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  margin: 0.3rem;
+}
+body .header-logo {
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  color: #FD76CB;
+  user-select: none;
+}
+body .header-btnFavoritos {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  color: #FD76CB;
+  border-radius: 20px;
+  padding: 2px;
+  transition: all 100ms;
+  border: 2px solid black;
+  user-select: none;
+}
+body .header-btnFavoritos:hover {
+  border: 2px solid #FFAC30;
+  color: #FFAC30;
+  user-select: none;
+}
+body .Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .Post {
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: inset #ffac302a 3px;
+  border-radius: 38px;
+  margin: 40px auto;
+  box-shadow: #ffac302a 40px 20px 120px;
+  font-size: 0.9rem;
+}
+body .Post-img {
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  width: 100%;
+}
+body .Post-texto {
+  padding: 0 0.8rem;
+  margin: 0.2rem;
+}
+body .Post-texto h1 {
+  text-align: center;
+}
+body .Post-btn {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin: 20px auto;
+  text-align: center;
+  width: 40%;
+  box-shadow: 0px 5px 10px #ffac302a;
+  box-sizing: border-box;
+  border: inset 1px white;
+  cursor: pointer;
+  border-radius: 40px;
+  text-transform: uppercase;
+}
+body .Post-btnArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=App.css.map */
