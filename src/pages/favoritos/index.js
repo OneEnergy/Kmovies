@@ -15,7 +15,9 @@ export default function Favoritos() {
                     setLoading(false)
                 })
             }else{
-                setLoading(false)
+                setTimeout(function() {
+                  setLoading(false)
+                }, 2000);
             }
         }
         apiFilmes()
@@ -31,7 +33,7 @@ export default function Favoritos() {
         <div>
             {   filmes.length !== 0 ? filmes.map(item => (
                     <FavPost key={item.id} id={item.id} capa={item.foto} nome={item.nome} sinopse={item.sinopse}/> 
-                )) : <div className='nenhumSelecionado'><h1>Nenhum Filme Selecionado</h1></div>
+                )) : <div className='nenhumSelecionado'><h1 className="text">Nenhum Filme Selecionado</h1></div>
             }
         </div>
     )

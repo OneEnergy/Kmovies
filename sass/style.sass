@@ -18,9 +18,14 @@ body
         flex-direction: column
         margin: 0 aut
     .nenhumSelecionado
-        @include mixins.flex-center
-        text-align: center
-        margin: 40px 0
+       height: 60vh
+       display: flex
+    .text
+      display: flex
+      text-align: center
+      align-items: center
+
+       
     .header
         @include mixins.container
         display: flex
@@ -47,6 +52,7 @@ body
             border: 2px solid black
             user-select: none
             &:hover
+                padding: 5px
                 border: 2px solid variables.$secundaryColor
                 color: variables.$secundaryColor
                 user-select: none
@@ -62,7 +68,7 @@ body
         border: inset variables.$borderColor 3px
         border-radius: 38px
         margin: 40px auto
-        box-shadow: variables.$borderColor 40px 20px 120px
+        box-shadow: variables.$borderColor 0 0 60px
         font-size: 0.9rem
         &-img
             border-top-right-radius: 40px
@@ -90,4 +96,6 @@ body
         &-btnArea
             display: flex
             justify-content: space-between
+    
 // Post Favoritos Array Vazio
+   
